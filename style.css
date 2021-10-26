@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Comic Neue', cursive;
+}
+
+#images{
+	margin-bottom: 49px;
+}
+
+#images>*{
+	display: flex;
+}
+
+.image{
+	width: 25%;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.image>h5{
+    position: relative;
+    top: 160px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    width: 75%;
+}
+
+.front-image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(5px);
+}
+
+.front-image>div{
+	position: absolute;
+	height: 75%;
+	width: 75%;
+	top: 98.5px;
+	box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.78);
+	background-size: cover;
+}
+
+.front-image>div>h3{
+    position: relative;
+    top: 400px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.front-image>div>p{
+    position: relative;
+    top: 450px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    width: calc(100% - 50px);
+}
+
+.control-left,
+.control-right,
+.control-close{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.control-close{
+	background-image: url("images/delete-sign.png");
+	left: calc(100% - 30px);
+	top: 0;
+}
+.control-left{
+	background-image: url("images/sort-left.png");
+	left: 0;
+	top: calc(50% - 30px);
+}
+.control-right{
+	background-image: url("images/sort-right.png");
+	top: calc(50% - 30px);
+	left: calc(100% - 30px);
+}
+
+#menu{
+	position: fixed;
+	top: calc(100% - 50px);
+	width: 100%;
+	height: 50px;
+	background-color: #1f2224;
+	z-index: 999;
+}
+
+.about-button{
+	position: relative;
+    left: calc(100% - 100px);
+    height: 100%;
+    width: 100px;
+    border: none;
+    background-color: #1f2224;
+    color: white;
+    transition: 0.5s;
+}
+
+.about-button:hover{
+	background-color: #26282a;
+}
+
+#about{
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	display: flex;
+	background-color: #26282a;
+}
+.about-blur{
+	position: fixed;
+	top: 100%;
+	height: calc(100%);
+	width: 100%;
+	transition: 0.5s;
+	backdrop-filter: blur(5px);
+}
+.about-blur-active{
+	top: 0;
+}
+
+.about-active{
+	top: calc(100% - 500px) !important;
+}
+
+.about-me{
+	color: #cacaca;
+	width: 50%;
+}
+.about-me>div{
+	margin-left: 20%;
+    height: calc(100% - 70px);
+    padding-top: 70px;
+}
+
+.about-contact{
+	color: #cacaca;
+	width: 50%;
+}
+
+.about-contact>div{
+	margin-right: 20%;
+	margin-left: 10px;
+    height: calc(100% - 70px);
+    padding-top: 70px;
+}
+
+.about-contact input[type="text"], .about-contact input[type="email"]{
+	margin-right: 20px;
+	width: calc(20% + 102px);
+	border: none;
+	height: 36px;
+	padding: 0 10px;
+}
+
+.about-contact textarea{
+	margin-right: 20px;
+	border: none;
+	height: 85px;
+	padding: 10px;
+}
+
+.about-contact input[type="text"], 
+.about-contact input[type="email"], 
+.about-contact textarea{
+	background-color: #34363b;
+}
+
+.about-contact input[type="submit"], .about-contact input[type="reset"]{
+	margin-right: 20px;
+	width: 85px;
+	border: none;
+	height: 36px;
+	padding: 0 10px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.about-contact input[type="submit"]{
+	background-color: #39a58e;
+}
+.about-contact input[type="reset"]{
+	background-color: #26282b;
+	border: solid 1px #323438;
+}
+.about-contact input[type="submit"]:hover{
+	background-color: #26282b;
+	border: solid 1px #323438;
+}
+.about-contact input[type="reset"]:hover{
+	background-color: #39a58e;
+}
+
